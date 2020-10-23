@@ -1,5 +1,5 @@
 .header {        
-    background-image: url(../img/header/header_bg.png);
+    background-image: url(../img/header_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -175,7 +175,7 @@
         cursor: pointer;        
 
         &::before {
-            content: url(../img/header/scroll.svg);
+            content: url(../img/scroll.svg);
             position: absolute;
             top: 12px;
             left: 50%;

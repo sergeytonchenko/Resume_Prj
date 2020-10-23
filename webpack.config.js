@@ -45,12 +45,12 @@ const optimization = () => {
 
 const cssLoaders = extra => {
 
-    const loaders = [ 
+    const loaders = [                     
             {
-                loader: MiniCssExtractPlugin.loader,
+                loader: MiniCssExtractPlugin.loader,                
                 options: {
-                    hmr: modeDev,
-                    reloadAll: true
+                    hmr: modeDev, 
+                    publicPath: '../'                                                                           
                 }
             },
             'css-loader',
@@ -66,7 +66,7 @@ const cssLoaders = extra => {
                     },
                     sourceMap: true
                 }
-            },
+            },            
         ]
     
     if (extra) {
@@ -81,7 +81,7 @@ module.exports = {
     entry: ['@babel/polyfill', './index.js'],
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),                                
     },
     resolve: {        
         alias: {
@@ -149,11 +149,17 @@ module.exports = {
               },
             {
                 test: /\.(png|jpg|svg|gif)$/,
-                use: ['file-loader']
+                loader: 'file-loader',
+                options: {
+                    name: 'img/[name].[ext]',                                                      
+                },
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader']
+                loader: 'file-loader',
+                options: {
+                    name: 'fonts/[name].[ext]'
+                }
             }
         ]
     }
