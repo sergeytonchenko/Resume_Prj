@@ -1,16 +1,4 @@
-$border: 1px solid rgb(53, 11, 11);
-
-.sass {
-    display: flex;
-    padding: 1rem;
-    margin: 2rem;
-    border: $border;
-    width: calc(10000 / 30)px;
-    // width: 80%;
-
-    h2 {
-        text-align: center;
-        color: #aa2b41;
-    }
-
-}
+@import "~bootstrap/scss/bootstrap";
+@import "./parsials/params";
+@import "./parsials/mixins";
+@import "./modules/header.scss"
