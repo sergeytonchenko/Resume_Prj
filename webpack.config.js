@@ -45,7 +45,7 @@ const optimization = () => {
 
 const cssLoaders = extra => {
 
-    const loaders = [                     
+    const loaders = [                              
             {
                 loader: MiniCssExtractPlugin.loader,                
                 options: {
@@ -91,12 +91,10 @@ module.exports = {
     },
     optimization: optimization(),
     devtool: modeDev ? 'source-map' : 'eval',
-    devServer: {
-        historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './dist'),
-        open: true,
-        compress: true,
-        hot: true,
+    devServer: {        
+        contentBase: path.join(__dirname, 'dist'),               
+        open: true,        
+        compress: true,        
         port: 8080
     },
     plugins: [        
@@ -107,7 +105,7 @@ module.exports = {
                 collapseWhitespace: modeProd
             }
         }), 
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),        
         new CopyWebpackPlugin({
             patterns: [
               { from: './img', to: './img' },

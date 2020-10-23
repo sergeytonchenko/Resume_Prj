@@ -6,11 +6,12 @@
     max-height: 700px;
 
     &-title-wrap {
-        margin-top: 55px;
+        margin-top: 75px;
     } 
     
     &__title {
-        @include text-page (40px);       
+        @include text-page (40px);
+        color: rgb(28, 13, 238);       
         
 
         @media (max-width: 1199px) {
