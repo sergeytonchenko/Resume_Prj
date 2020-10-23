@@ -85,7 +85,7 @@ module.exports = {
     },
     resolve: {        
         alias: {
-            '@css': path.resolve(__dirname, 'src/css'),
+            '@sass': path.resolve(__dirname, 'src/sass'),
             '@': path.resolve(__dirname, 'src'),
         }
     },

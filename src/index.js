@@ -1,5 +1,5 @@
 import * as $ from 'jquery';
-import 'bootstrap';
+// import 'bootstrap';
 import '@/js/first';
 import '@/js/second';
-import '@/sass/main.scss';
+import '@sass/main.scss';

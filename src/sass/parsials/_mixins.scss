@@ -4,19 +4,18 @@
       size: 45px;
       weight: 400;
     }
-    color: #fc7a12;
+    color: $color-text;
     text-align: center;
     opacity: 1;
   }
 
 @mixin text-page ($size) {
   font: {
-    family: 'Cabin', sans-serif;
-    // family: 'Playfair Display', serif;
+    family: 'Cabin', sans-serif;    
     size: $size;    
     weight: 400;
   }
-  color: #fc7a12;  
+  color: $color-text;  
 }
 
 @mixin about-block {
