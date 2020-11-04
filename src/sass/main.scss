@@ -1,5 +1,47 @@
-@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import "./parsials/params";
 @import "./parsials/mixins";
 @import "./modules/header";
-@import "./media.scss"
+@import "./modules/home";
+@import "./modules/about";
+@import "./modules/skills";
+@import "./modules/work";
+@import "./modules/contact";
+@import "./modules/footer";
+@import "./media.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 3rem 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: $normal-font-size;
+    color: $second-color;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

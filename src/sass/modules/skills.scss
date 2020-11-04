@@ -1,165 +1,65 @@
-.skills {    
-    background-image: url(../img/skills/skills_bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    &__title {
-        @include text-title;
-        text-align: center;
-        margin: 45px 0;
-
-        @media (max-width: 767px) {
-            margin: 20px 0;
-            font-size: 40px;
-        }
-
-        @media (max-width: 575px) {            
-            font-size: 30px;
-        }
-    
-    }
-
-    &__list {
-        list-style: none;
-        width: 100%;
-        margin: 60px auto;
-        color: white;
-
-        @media (max-width: 575px) {
-            margin: 30px auto;
-        }
-
-        & li {
-            margin: 40px 0;
-        }
-
-        & h3 {
-            margin: 20px 0;
-            @include text-title;
-            font-size: 35px;
-            text-align: left;
-
-            @media (max-width: 575px) {
-                margin: 15px 0;
-                font-size: 25px;
-            }
-        }
-    }
-
-    &__bar {
-        background: #353b48;
-        display: block;
-        height: 4px;
-        border: 1px solid rgba(31, 6, 90, 0.1);
-        border-radius: 3px;        
-        box-shadow: 0 0 10px #fc7a12b3;  
-
-        & span {            
-            float: left;
-            height: 2px;
-            background: #fc7a12;
-        }
-    }
-
-    &__html {
-        width: 90%;
-        animation: html 2s;
-    }
-
-    &__css {
-        width: 70%;
-        animation: css 2s;
-    }
-
-    &__js {
-        width: 60%;
-        animation: js 2s;
-    }
-
-    &__prep {
-        width: 50%;
-        animation: prep 2s;
-    }
-
-    &__block {                
-        background-color: rgba(0, 0, 0, 0.52);
-        box-shadow: 0 0 18.9px 10.2px rgba(139, 98, 98, 0.72);
-        margin-bottom: 75px;
-        border-radius: 5px;
-
-        @media (max-width: 1199px) {
-            margin-bottom: 35px;
-        }
-    }
-
-    &__lists {
-        margin: 20px 0 20px 20px;
-        padding-left: 20px;
-        list-style: none;               
-        color: white;
-        border-right: 1px solid white;
-
-        @media (max-width: 991px) {
-            margin-right: 20px;
-            padding-left: 25px;
-            border-right: none;             
-            border-bottom: 1px solid white;
-            list-style: initial;
-        }
-
-        @media (max-width: 575px) {            
-            list-style: none;
-            padding-left: 0px;
-        }
-
-        &--last {
-            border-right: none;
-        }
-
-        & li {
-            margin: 40px 0;
-            font-size: 25px;
-
-            @media (max-width: 575px) {
-                margin: 20px 0;
-                font-size: 20px;
-            }
-        }
-    }
+.skills__container {
+    row-gap: 2rem;
+    text-align: center;
 }
 
-@keyframes html {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
+.skills__subtitle {
+    margin-bottom: $mb-2;
 }
 
-@keyframes css {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    }
+.skills__text {
+    margin-bottom: $mb-4;
 }
 
-@keyframes js {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
+.skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    margin-bottom: $mb-4;   
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgb(14, 36, 49, .15);    
 }
 
-@keyframes prep {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 50%;
-    }
+.skills__icon {
+    font-size: 2rem;
+    margin-right: $mb-2;
+    color: $first-color;
+}
+
+.skills__names {
+    display: flex;
+    align-items: center;
+}
+
+.skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $first-color;
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: $z-back;
+}
+
+.skills__html {
+    width: 95%;
+}
+
+.skills__css {
+    width: 75%;
+}
+
+.skills__js {
+    width: 60%;
+}
+
+.skills__vue {
+    width: 50%;
+}
+
+.skills__img {
+    border-radius: .5rem;
 }

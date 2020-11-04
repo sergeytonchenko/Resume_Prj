@@ -1,58 +1,19 @@
-header.header
-  .container
-    .row
-      .col-12.d-lg-flex.flex-lg-row.justify-content-lg-between
-        .header-title-wrap
-          h1.header__title.tab_en Weeeeelcome, to the resume page Tonchenko Sergey
-          //- h1.header__title.tab_ru Добро пожаловать на страничку Тонченка Сегрея
-        .header__lang.d-flex.flex-row.justify-content-md-end.justify-content-start.justify-content-lg-start
-          p(id=".tab_en") eng
-          //- p(id=".tab_ru") рус      
-          .header__burger.burger.d-md-none.d-block
-            nav
-              .burger__toggle
-                input(type='checkbox')
-                span
-                span
-                span
-                ul.burger__link
-                  li.burger__item
-                    a#burger_about.tab_en About me
-                    //- a#burger_about1.tab_ru О себе
-                  li.burger__item
-                    a#burger_skills.tab_en Skills
-                    //- a#burger_skills1.tab_ru Навыки
-                  li.burger__item
-                    a#burger_portfolio.tab_en Potfolio
-                    //- a#burger_portfolio1.tab_ru Портфолио
-                  li.burger__item
-                    a#burger_contact.tab_en Let's work?
-                    //- a#burger_contact1.tab_ru Контакты
-      .col-xl-5.col-md-6.col-12
-        .header__photo
-          img(src="./img/my_photo.png", alt="my_photo")
-      .col-xl-4.offset-xl-3.col-md-6.offset-md-0.col-12
-        .header__menu.menu.d-xl-flex.flex-xl-column.d-md-block.d-none
-          #about.menu__item.tab_en.wow.fadeInRight(data-wow-delay='1s') About me
-          //- #about1.menu__item.tab_ru.wow.fadeInRight(data-wow-delay='1s') О себе
-          #skills.menu__item.tab_en.wow.fadeInRight(data-wow-delay='1.1s') Skills
-          //- #skills1.menu__item.tab_ru.wow.fadeInRight(data-wow-delay='1.1s') Навыки
-          #portfolio.menu__item.tab_en.wow.fadeInRight(data-wow-delay='1.2s') Potfolio
-          //- #portfolio1.menu__item.tab_ru.wow.fadeInRight(data-wow-delay='1.2s') Портфолио
-          #contact.menu__item.tab_en.wow.fadeInRight(data-wow-delay='1.3s') Let's work?
-          //- #contact1.menu__item.tab_ru.wow.fadeInRight(data-wow-delay='1.3s') Контакты      
-        .header__social.d-flex.flex-row.justify-content-around.justify-content-xl-around.justify-content-lg-end        
-          a.header__circle(href="https://www.facebook.com/profile.php?id=100022107559569&ref=bookmarks", target='_blank')
-            i.fab.fa-facebook-f.header__social-icon
-          a.header__circle(href="https://vk.com/id128143854", target='_blank')
-            i.fab.fa-vk.header__social-icon
-          a.header__circle(href="https://t.me/randick56", target='_blank')                
-            i.fab.fa-telegram-plane.header__social-icon
-          a.header__circle(href="https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D1%82%D0%BE%D0%BD%D1%87%D0%B5%D0%BD%D0%BA%D0%BE-a67402199/", target='_blank')
-            i.fab.fa-linkedin-in.header__social-icon
-      .col-12
-        #scroll.header__scroll
-          img(src="./img/header/scroll.svg", alt="scroll")
-         
-        
-          
+header.l-header
+  nav.nav.bd-grid
+    div
+      a.nav__logo(href="#") Portfolio
+    #nav-menu.nav__menu
+      ul.nav__list
+        li.nav__item
+          a.nav__link.active(href="#home") Home
+        li.nav__item
+          a.nav__link(href="#about") About
+        li.nav__item
+          a.nav__link(href="#skills") Skills
+        li.nav__item
+          a.nav__link(href="#work") Work
+        li.nav__item
+          a.nav__link(href="#contact") Contact
+    #nav-toogle.nav__toogle
+      i.bx.bx-menu
+  

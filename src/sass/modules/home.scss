@@ -1,0 +1,54 @@
+.home {
+    height: calc(100vh - 3rem);
+    row-gap: 1rem;
+
+    &__data {
+        align-self: center;
+    }
+
+    &__title {
+        font-size: $big-font-size;
+        margin-bottom: $mb-5;
+    }
+
+    &__title-color {
+        color: $first-color;
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__social-icon {
+        width: max-content;
+        margin-bottom: $mb-2;
+        font-size: 1.5rem;
+        color: $second-color;
+
+        &:hover {
+            color: $first-color;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 295px;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: $first-color;
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+
+    &:hover {
+        box-shadow: 0 10px 36px rgb(0, 0, 0, .15);
+    }
+}
+

@@ -143,7 +143,7 @@ module.exports = {
             },
             {
                 test: /\.pug$/,
-                loader: 'pug-loader'                
+                loader: 'pug-loader',                                               
               },
             {
                 test: /\.(png|jpg|svg|gif)$/,

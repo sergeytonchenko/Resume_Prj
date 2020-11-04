@@ -1,51 +1,36 @@
-.skills
-  .container
-    .row
-      .col-12
-        h2.skills__title.tab_en My skills
-        h2.skills__title.tab_ru Навыки
-        .skills__list.wow.zoomIn(data-wow-delay='0.3s')
-          li
-            h3 HTML5
-            span.skills__bar
-              span.skills__html
-          li
-            h3 CSS3
-            span.skills__bar
-              span.skills__css
-          li
-            h3 JavaScript
-            span.skills__bar
-              span.skills__js
-          li
-            h3 Pug Sass
-            span.skills__bar
-              span.skills__prep
-      .col-12
-        .skills__block
-          .row
-            .col-lg-4.col-12
-              ul.skills__lists
-                li HTML5 tags
-                li EMET
-                li.tab_en BEM architecture
-                li.tab_ru БЭМ-архитектура
-                li.tab_en Adaptive valid layout
-                li.tab_ru Адаптивная верстка
-                li.tab_en Cross-browser
-                li.tab_ru Кроссбраузерность
-            .col-lg-4.col-12
-              ul.skills__lists
-                li Gulp, Webpack
-                li CSS Grid Layout
-                li Bootstrap 4
-                li Git
-                li.tab_en CSS Animation
-                li.tab_ru CSS анимации
-            .col-lg-4.col-12
-              ul.skills__lists.skills__lists--last
-                li JavaScript6 Essensial
-                li JQuery library
-                li AJAX
-                li React.js framework
-                li Vue.js framework
+section#skills.skills.section
+  h2.section-title Skills
+  .skills__container.bd-grid
+    div
+      h2.skills__subtitle Professional Skills
+      p.skills__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae?
+      .skills__data
+        .skills__names
+          i.bx.bxl-html5.skills__icon
+          span.skills__name HTML5
+        div
+          span.skills__percentage 90%
+        .skills__bar.skills__html
+      .skills__data
+        .skills__names
+          i.bx.bxl-css3.skills__icon
+          span.skills__name CSS3
+        div
+          span.skills__percentage 75%
+        .skills__bar.skills__css
+      .skills__data
+        .skills__names
+          i.bx.bxl-javascript.skills__icon
+          span.skills__name JS
+        div
+          span.skills__percentage 60%
+        .skills__bar.skills__js
+      .skills__data
+        .skills__names
+          i.bx.bxl-vuejs.skills__icon
+          span.skills__name Vue.js
+        div
+          span.skills__percentage 50%
+        .skills__bar.skills__vue
+    div
+      img.skills__img(src="./img/skills_img.jpg", alt="")
