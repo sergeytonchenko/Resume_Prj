@@ -1,3 +1,9 @@
+@media screen and (min-width: 500px) {
+    .contact-data {
+        flex-direction: row;
+    }
+}
+
 @media screen and (min-width: 768px) {
     body {
          margin: 0;
@@ -64,7 +70,7 @@
         }
     }
 
-    .about__container, .skills__container {
+    .about__container, .skills__container, .contact__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
@@ -82,14 +88,16 @@
         }    
     }
 
-    .contact__form {
-        width: 360px;
+    .contact-data {
+        flex-direction: column;
     }
+}
 
-    .contact__container {
-        justify-items: center;
+@media screen and (min-width: 991px) {
+    .contact-data {
+        flex-direction: row;
     }
-} 
+}
 
 @media screen and (min-width: 1024px) {
     .bd-grid {
