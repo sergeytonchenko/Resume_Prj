@@ -43,6 +43,6 @@
   "dependencies": {
     "boxicons": "^2.0.7",
     "jquery": "^3.5.1",
-    "jquery-validation": "^1.19.2"
+    "jquery-validation": "^1.19.2"    
   }
 }

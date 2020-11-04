@@ -34,6 +34,10 @@
     align-items: center;
 }
 
+.skills__data {
+    background-color: #ffffff4b;
+}
+
 .skills__bar {
     position: absolute;
     left: 0;
@@ -60,6 +64,22 @@
     width: 50%;
 }
 
-.skills__img {
+.skills__box {
+    background-image: url(../img/skills_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: .5rem;
+    color: #ffffff;
+    height: 80%;
+    padding: 1rem;
+    vertical-align: center;
+}
+
+.skills__item {
+    margin-bottom: $mb-2;
+    font-size: $h2-font-size;
+
+    span {
+        margin-right: $mb-2;
+    }
 }

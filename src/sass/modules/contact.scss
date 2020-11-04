@@ -53,6 +53,7 @@
 
 .contact-form {
     width: 100%;
+    
 }
 
 .contact-data {
@@ -63,6 +64,7 @@
     border-radius: .5rem;
     border: 1.5px solid $second-color;
     margin-bottom: $mb-4;
+    background-color: #fff;
 
     &__title {
         color: $second-color;
