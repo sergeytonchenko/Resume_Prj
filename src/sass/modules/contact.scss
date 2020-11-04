@@ -1,3 +1,8 @@
+.input-wrap {
+    position: relative;
+    margin-bottom: $mb-4;
+}
+
 .contact__input {
     width: 100%;
     font-size: $normal-font-size;
@@ -6,8 +11,21 @@
     border-radius: .5rem;
     border: 1.5px solid $second-color;
     outline: none;
-    resize: none;
-    margin-bottom: $mb-4;    
+    resize: none;   
+    
+    &::placeholder {
+        font-size: $normal-font-size;
+        font-weight: 600;
+        color: rgb(153, 153, 153);
+    }
+}
+
+.contact__input+label {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    border: none;
+    color: tomato !important;
 }
 
 .contact__btn {
@@ -17,4 +35,14 @@
     font-size: $normal-font-size;
     cursor: pointer;
     margin-left: auto;
+}
+
+
+
+.success {
+    border: 1px solid green;
+}
+
+.error {
+    border: 1px solid red;
 }

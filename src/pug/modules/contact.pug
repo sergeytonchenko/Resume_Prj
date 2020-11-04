@@ -1,8 +1,11 @@
 section#contact.contact.section
   h2.section-title Contact
   .contact__container.bd-grid
-    form.contact__form(action="")
-      input.contact__input(type="text" placeholder="Name")
-      input.contact__input(type="mailto" placeholder="Name")
-      textarea.contact__input(name="", cols="0", rows="10")
-      input.contact__btn.button(type="button", value="Envair")
+    form#contact-form.contact__form(action="")      
+      .input-wrap
+        input.contact__input(type="text" name="name" placeholder="Name")
+      .input-wrap
+        input.contact__input(type="email" name="user_email" placeholder="E-mail")
+      .input-wrap
+        textarea.contact__input(name="message", cols="0", rows="10", placeholder="Message" )
+      input.contact__btn.button(type="submit", value="Envair")

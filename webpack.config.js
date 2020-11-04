@@ -7,6 +7,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 const modeDev = process.env.NODE_ENV === 'development';
 const modeProd = !modeDev;
@@ -114,7 +115,12 @@ module.exports = {
           }),
         new MiniCssExtractPlugin({
             filename: './css/style.css'
-        })
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+          })
     ],
     module: {
         rules: [

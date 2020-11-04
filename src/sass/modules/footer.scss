@@ -18,6 +18,10 @@
         font-size: 1.5rem;
         color: #ffffff;
         margin: 0 $mb-2;
+
+        &:hover {
+            color: $first-color;
+        }
     }
 }
 
