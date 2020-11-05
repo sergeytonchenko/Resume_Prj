@@ -8,4 +8,9 @@ import './js/nav-toggle';
 
 $(document).ready(function(){
     valid; 
+    $('.home__arrow').on('click', function(){        
+        let dest = document.querySelector('.about'); 
+          $('html,body').animate({ 
+            scrollTop: $(dest).offset().top}, 100);
+        });
 })
