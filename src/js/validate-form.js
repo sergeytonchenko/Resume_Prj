@@ -17,16 +17,13 @@ export const valid = $('#contact-form').validate({
         },
         messages: {            
             name: {
-                minlength:'Поле должно содержать не менее 4 символов',
-                required: 'Поле должно быть заполнено'
+                minlength:'The field must contain at least 4 characters'                
             },            
             user_email: {
-                email:'Введите корректный e-mail',
-                required: 'Поле должно быть заполнено'
+                email: 'Please enter a valid e-mail'                
             },
-            message: {
-                required: 'Поле должно быть заполнено',
-                minlength:'Поле должно содержать не менее 6 символов',
+            message: {                
+                minlength:'The field must contain at least 6 characters'
             }                        
         },                    
         success: "valid",                

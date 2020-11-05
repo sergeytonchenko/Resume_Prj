@@ -31,6 +31,12 @@
         }
     }
 
+    .home { 
+        &__title {
+            font-size: 3rem;            
+        }
+    }
+
     .nav {
         height: 4rem;
     }
@@ -78,7 +84,8 @@
         }
     }
 
-    .about__container, .skills__container, .contact__container {
+    .home__container, .about__container,
+    .skills__container, .contact__container {
         grid-template-columns: repeat(2, 1fr);        
         text-align: initial;
     }

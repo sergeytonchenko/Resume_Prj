@@ -23,7 +23,7 @@
     &__social-icon {
         width: max-content;
         margin-bottom: $mb-2;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: $second-color;
 
         &:hover {
@@ -32,10 +32,7 @@
     }
 
     &__img {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 295px;
+        
     }
 }
 

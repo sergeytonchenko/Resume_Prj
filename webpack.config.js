@@ -109,8 +109,7 @@ module.exports = {
         new CleanWebpackPlugin(),        
         new CopyWebpackPlugin({
             patterns: [
-              { from: './img', to: './img' },
-              { from: './fonts', to: './fonts' },            
+              { from: './img', to: './img' },                        
             ]
           }),
         new MiniCssExtractPlugin({
