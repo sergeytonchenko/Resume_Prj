@@ -48,21 +48,11 @@
     z-index: $z-back;
 }
 
-.skills__html {
-    width: 95%;
+.skills__html, .skills__css,
+.skills__js, .skills__vue  {
+    width: 0%;
 }
 
-.skills__css {
-    width: 75%;
-}
-
-.skills__js {
-    width: 60%;
-}
-
-.skills__vue {
-    width: 50%;
-}
 
 .skills__box {
     background-image: url(../img/skills_img.jpg);
