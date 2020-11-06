@@ -1,10 +1,10 @@
-.home {    
-    row-gap: 1rem; 
+.home { 
     position: relative;
     margin-left: $mb-2;
     margin-right: $mb-2; 
     
     &__arrow {
+        display: none;
         position: absolute;
         bottom: 5%;
         left: 50%;
@@ -17,10 +17,12 @@
     &__container {     
         height: 100vh;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-top: 3rem;
     }
 
-    &__right {        
+    &__right { 
+        display: none;       
         z-index: 1;
         align-self: flex-end;                       
     }    
@@ -32,13 +34,14 @@
     }   
 
     &__data {
-        padding-top: 10rem;
+        padding-top: 3rem;
+        padding-bottom: $mb-3;
     }
 
     &__title {
         font-size: $big-font-size;
         color: $second-color;
-        margin-bottom: $mb-4;
+        margin-bottom: $mb-3;
     }
 
     &__title-color {
@@ -46,20 +49,20 @@
     }
 
     &__subtitle {
-        font-size: $h2-font-size;
+        font-size: $normal-font-size;
         color: $second-color;
         margin-bottom: $mb-4;
     }
 
     &__social {        
         display: flex;
-        padding-bottom: $mb-3;        
+        padding-bottom: $mb-3;           
     }
 
     &__social-icon {
         width: max-content;
         margin-bottom: $mb-2;
-        margin-right: $mb-4;
+        margin-right: $mb-5;
         font-size: 2rem;
         color: #adadad;
 
