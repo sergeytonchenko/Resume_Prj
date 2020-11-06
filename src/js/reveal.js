@@ -31,5 +31,5 @@ reveal.onload = function () {
     
     sr.reveal('.contact__input', {interval: 200})
     sr.reveal('.contact-data', {delay: 200}) 
-    sr.reveal('.contact__location', {delay: 400})     
+    sr.reveal('.contact__location', {delay: 200})     
 }
