@@ -16,13 +16,20 @@ html {
 
 
 body {
-    margin: 3rem 0 0 0;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: $normal-font-size;
-    color: $second-color;
-    background-image: url(../img/brick_wall.jpg);
-    background-attachment: fixed;
+    color: $third-color;
+}
 
+.first-page {
+    background-image: url(../img/brick_wall_3.jpg);
+    background-attachment: fixed;
+}
+
+.main {
+    background-image: url(../img/brick_wall_2.jpg);
+    background-attachment: fixed;
 }
 
 *, ::before, ::after {

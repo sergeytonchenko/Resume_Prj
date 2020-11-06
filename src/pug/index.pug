@@ -6,8 +6,14 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Tonchenko_Resume                     
     body
-      include modules/header
-      include modules/main
+      .first-page
+        include modules/header
+        include modules/home
+      .main
+        include modules/about
+        include modules/skills
+        include modules/work
+        include modules/contact      
       include modules/footer 
     
     

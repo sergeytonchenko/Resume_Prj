@@ -12,7 +12,5 @@ export const animateSkills = $(window).scroll(function() {
         $('.skills__vue').delay(300).animate({            
             width: '50%'
         }, 3000);
-    }) 
-
-
+    })
 });
