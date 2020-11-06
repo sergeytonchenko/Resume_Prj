@@ -10,52 +10,42 @@
 @import "./modules/footer";
 @import "./media.scss";
 
+*, ::before, ::after {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
-
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: $normal-font-size;
     color: $third-color;
 }
-
 .first-page {
     background-image: url(../img/brick_wall_3.jpg);
     background-attachment: fixed;
 }
-
 .main {
     background-image: url(../img/brick_wall_2.jpg);
     background-attachment: fixed;
 }
-
-*, ::before, ::after {
-    box-sizing: border-box;
-}
-
 h1, h2, p {
     margin: 0;
 }
-
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 input {
     border: none;
 }

@@ -38,11 +38,17 @@
     &__title {
         font-size: $big-font-size;
         color: $second-color;
-        margin-bottom: $mb-6;
+        margin-bottom: $mb-4;
     }
 
     &__title-color {
         color: $first-color;
+    }
+
+    &__subtitle {
+        font-size: $h2-font-size;
+        color: $second-color;
+        margin-bottom: $mb-4;
     }
 
     &__social {        

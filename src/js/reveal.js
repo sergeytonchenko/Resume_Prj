@@ -6,12 +6,12 @@ document.body.append(reveal);
 reveal.onload = function () {
     const sr = ScrollReveal({
         origin: 'top',
-        distance: '80px',
+        distance: '100px',
         duration: 2000,
-        reset: true
+        reset: true        
     })
     
-    sr.reveal('.home__title', {})
+    sr.reveal('.home__title', {delay: 200})
     sr.reveal('.button', {delay: 200})
     sr.reveal('.home__arrow', {delay: 600})
     sr.reveal('.home__img', {delay: 400, origin: 'bottom'})
@@ -31,5 +31,5 @@ reveal.onload = function () {
     
     sr.reveal('.contact__input', {interval: 200})
     sr.reveal('.contact-data', {delay: 200}) 
-    sr.reveal('.contact__location', {delay: 200})     
+    sr.reveal('.contact__location', {delay: 200}) 
 }
