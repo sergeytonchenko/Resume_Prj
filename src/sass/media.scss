@@ -1,7 +1,4 @@
-@media screen and (min-width: 500px) {
-    .contact-data {
-        flex-direction: row;
-    }
+@media screen and (min-width: 500px) {    
     .about__education {
         flex-direction: row;
 
@@ -11,6 +8,9 @@
     }
     .about__img img {
         width: 400px;            
+    }
+    .contact-data {
+        flex-direction: row;
     }    
 }
 
