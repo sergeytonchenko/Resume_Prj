@@ -1,13 +1,14 @@
-@media screen and (min-width: 500px) {    
-    .about__education {
-        flex-direction: row;
-
-        div {
-            margin-bottom: 0;
+@media screen and (min-width: 500px) {
+    .about {
+        &__education {
+            flex-direction: row;
+            div {
+                margin-bottom: 0;
+            }
         }
-    }
-    .about__img img {
-        width: 400px;            
+        &__img img {
+            width: 400px;            
+        }
     }
     .contact-data {
         flex-direction: row;
@@ -93,9 +94,6 @@
 }
 
 @media screen and (min-width: 991px) {
-    .contact-data {
-        flex-direction: row;
-    }    
     .home {
         &__container {            
             padding-top: 0;
@@ -104,7 +102,10 @@
         &__data {
             padding-top: 10rem;    
         }        
-    }    
+    } 
+    .contact-data {
+        flex-direction: row;
+    }   
 }
 
 @media screen and (min-width: 1024px) {

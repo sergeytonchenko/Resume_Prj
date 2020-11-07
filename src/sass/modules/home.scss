@@ -1,8 +1,7 @@
 .home { 
     position: relative;
     margin-left: $mb-2;
-    margin-right: $mb-2; 
-    
+    margin-right: $mb-2;
     &__arrow {
         display: none;
         position: absolute;
@@ -11,59 +10,50 @@
         transform: translateX(-50%);
         width: 90px;
         cursor: pointer;
-        z-index: 2;
+        z-index: $z-tooltip;
     }
-    
     &__container {     
         height: 100vh;
         display: flex;
         justify-content: space-between;
         padding-top: 3rem;
     }
-
     &__right { 
         display: none;       
-        z-index: 1;
+        z-index: $z-normal;
         align-self: flex-end;                       
-    }    
-
+    }
     &__left {
         display: flex;
         flex-direction: column;
         justify-content: space-between;                
-    }   
-
+    }
     &__data {
         padding-top: 3rem;
         padding-bottom: $mb-3;
     }
-
     &__title {
         font-size: $big-font-size;
         color: $second-color;
         margin-bottom: $mb-3;
     }
-
     &__title-color {
         color: $first-color;
     }
-
     &__subtitle {
         font-size: $normal-font-size;
         color: $second-color;
         margin-bottom: $mb-4;
     }
-
     &__social {        
         display: flex;
         padding-bottom: $mb-3;           
     }
-
     &__social-icon {
         width: max-content;
         margin-bottom: $mb-2;
         margin-right: $mb-5;
-        font-size: 2rem;
+        font-size: $big-font-size;
         color: #adadad;
 
         &:hover {
@@ -75,12 +65,11 @@
 .button {
     display: inline-block;
     background-color: $first-color;
-    color: #fff;
+    color: $third-color;
     padding: .75rem 2.5rem;
     font-weight: 600;
     border-radius: 0.5rem;
     cursor: pointer;
-
     &:hover {
         box-shadow: 0 10px 36px rgb(0, 0, 0, .15);
     }
